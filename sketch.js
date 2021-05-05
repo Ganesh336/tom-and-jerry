@@ -36,11 +36,11 @@ function draw() {
     background(bg);
     //Write condition here to evalute if tom and jerry collide
 
-if(tom.x = jerry.x < (tom.width - jerry.width)/2){
+if(tom.x - jerry.x < (tom.width - jerry.width)/2){
     tom.velocityX = 0;
     tom.addAnimation("tomLastImg",tomImg3);
     tom.x = 300;
-    tom.scale = 2;
+    tom.scale = 0.2;
     tom.changeAnimation("tomLastImg");
 
     jerry.addAnimation("jerryLastImg",jerryImg3);
